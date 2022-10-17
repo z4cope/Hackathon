@@ -1,3 +1,80 @@
+@import "../generalStyles";
+$accent-color: #ec5242;
+
 header {
   width: 100vw;
+  height: 10vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  nav {
+    .burger-icon {
+      width: 7%;
+      margin: 2rem 0 0 2rem;
+    }
+  }
+  .nav-items {
+    @include flex-layout(column);
+    @include accent-color-bg;
+    gap: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    .close-btn {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: 5%;
+    }
+    li {
+      a {
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 2.4rem;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    @include flex-layout(row);
+    justify-content: flex-end;
+    background: #fff;
+    nav {
+      width: 85%;
+      @include flex-layout(row);
+      justify-content: space-between;
+    }
+    .nav-items {
+      @include flex-layout(row);
+      transform: translateX(0);
+      background: transparent;
+      position: relative;
+      transform: translateX(0);
+      .nav-call-to-action {
+        @include accent-color-text;
+        border: 4px solid $accent-color;
+        padding: 1rem 2rem;
+        transition: all 0.3s ease;
+        &:hover {
+          @include accent-color-bg;
+          color: #fff;
+        }
+      }
+      li {
+        a {
+          @include dark-light-text;
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
 }

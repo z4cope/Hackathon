@@ -4,11 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/home/style.css" />
     <title>Hackathon</title>
   </head>
   <body>
-    <h1>Hackathon</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, itaque.</p>
+    <header>
+      <nav>
+        <a href="#">
+          <img
+            class="desktop-element logo"
+            src="./assets/logoipsum-280.svg"
+            alt="Hackathon logo"
+          />
+        </a>
+        <img
+          id="burger-icon"
+          class="mobile-element burger-icon"
+          src="./assets/burger-icon.svg"
+          alt="mobile menu"
+        />
+        <ul id="nav-menu" class="nav-items">
+          <li>
+            <img
+              class="mobile-element close-btn"
+              src="./assets/mob-menu-close-btn.svg"
+              alt="mobile menu close button"
+            />
+          </li>
+          <li class="mobile-element"><a href="#">Home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">program</a></li>
+          <li><a href="#">join</a></li>
+          <li><a href="#">sponser</a></li>
+          <li><a href="#">news</a></li>
+          <li><a class="nav-call-to-action" href="#">CC campaign</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-section"></section>
+    </main>
+    <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>

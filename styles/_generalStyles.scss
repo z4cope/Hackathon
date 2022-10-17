@@ -16,6 +16,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Lato", sans-serif;
 }
 
 ul {
@@ -24,6 +25,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.desktop-element {
+  display: none;
 }
 
 @mixin dark-text {
@@ -38,9 +43,27 @@ a {
   color: #fff;
 }
 
+@mixin accent-color-bg {
+  background-color: #ec5242;
+}
+
+@mixin accent-color-text {
+  color: #ec5242;
+}
+
 @mixin flex-layout($direction) {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: $direction;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-element {
+    display: none;
+  }
+
+  .desktop-element {
+    display: initial;
+  }
 }
