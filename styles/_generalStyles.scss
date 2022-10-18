@@ -27,6 +27,15 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+$accent-color: #ec5242;
+$light-gray: #d3d3d3;
+$light-dark: #272a31;
+
 .desktop-element {
   display: none;
 }

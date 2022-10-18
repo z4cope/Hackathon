@@ -25,6 +25,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
 .desktop-element {
   display: none;
 }
@@ -64,6 +69,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
 .desktop-element {
   display: none;
 }
@@ -77,16 +87,15 @@ a {
   }
 }
 header {
-  width: 100vw;
+  width: 100%;
   height: 10vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
 }
 header nav .burger-icon {
   width: 7%;
-  margin: 2rem 0 0 2rem;
+  margin: 2rem 0 0 3rem;
 }
 header .nav-items {
   display: flex;
@@ -124,6 +133,7 @@ header .nav-items li a {
     flex-direction: row;
     justify-content: flex-end;
     background: #fff;
+    position: relative;
   }
   header nav {
     width: 85%;
@@ -138,7 +148,7 @@ header .nav-items li a {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    transform: translateX(0);
+    transform: translateX(0) !important;
     background: transparent;
     position: relative;
     transform: translateX(0);
