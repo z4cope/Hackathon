@@ -89,9 +89,12 @@ p {
 header {
   width: 100%;
   height: 10vh;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
+}
+header .top-bar {
+  display: none;
 }
 header nav .burger-icon {
   width: 7%;
@@ -127,21 +130,42 @@ header .nav-items li a {
 
 @media screen and (min-width: 768px) {
   header {
+    position: initial;
+    min-height: 15vh;
+    width: 100%;
+  }
+  header .top-bar {
+    height: 5vh;
+    width: 100%;
+    padding: 0 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     justify-content: flex-end;
-    background: #fff;
-    position: relative;
+    background: #3e3e3e;
+  }
+  header .top-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+  header .top-bar ul li {
+    color: #fff;
+    font-size: 1.2rem;
   }
   header nav {
-    width: 85%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 15rem;
+    background: #fff;
+    min-height: 10vh;
   }
   header .nav-items {
     display: flex;
@@ -152,6 +176,7 @@ header .nav-items li a {
     background: transparent;
     position: relative;
     transform: translateX(0);
+    width: auto;
   }
   header .nav-items .nav-call-to-action {
     color: #ec5242;

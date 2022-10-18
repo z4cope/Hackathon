@@ -89,9 +89,12 @@ p {
 header {
   width: 100%;
   height: 10vh;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
+}
+header .top-bar {
+  display: none;
 }
 header nav .burger-icon {
   width: 7%;
@@ -127,21 +130,42 @@ header .nav-items li a {
 
 @media screen and (min-width: 768px) {
   header {
+    position: initial;
+    min-height: 15vh;
+    width: 100%;
+  }
+  header .top-bar {
+    height: 5vh;
+    width: 100%;
+    padding: 0 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     justify-content: flex-end;
-    background: #fff;
-    position: relative;
+    background: #3e3e3e;
+  }
+  header .top-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+  header .top-bar ul li {
+    color: #fff;
+    font-size: 1.2rem;
   }
   header nav {
-    width: 85%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 15rem;
+    background: #fff;
+    min-height: 10vh;
   }
   header .nav-items {
     display: flex;
@@ -152,6 +176,7 @@ header .nav-items li a {
     background: transparent;
     position: relative;
     transform: translateX(0);
+    width: auto;
   }
   header .nav-items .nav-call-to-action {
     color: #ec5242;
@@ -171,7 +196,7 @@ header .nav-items li a {
 }
 #hero-section {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background: url("../../assets/hero-mobile-bg.png") no-repeat;
   background-size: cover;
   padding: 2rem;
@@ -194,17 +219,17 @@ header .nav-items li a {
   font-size: 2.5rem;
 }
 #hero-section .hero-text-header {
-  font-size: 3.5vw;
+  font-size: 4vw;
   font-weight: 900;
-  background: url("../../assets/text-clip-img.jpeg") no-repeat center top;
+  background: url("../../assets/text-clip-img.jpeg") repeat-x center top;
   background-size: cover;
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
 }
 #hero-section .hero-text {
-  background: #d3d3d3;
-  border: 2px solid #fff;
+  background: rgb(247, 247, 248);
+  border: 4px solid rgb(255, 255, 255);
   padding: 1rem;
   color: #272a31;
 }
@@ -216,6 +241,85 @@ header .nav-items li a {
 #hero-section .hero-text-place {
   color: #5b5b5b;
   font-size: 1.5rem;
+}
+
+#program {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 90vh;
+  background: #272a31 url("../../assets/icons/pattern.png") repeat;
+  padding: 1rem;
+}
+#program .program-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  color: #fff;
+  margin: 4rem 0;
+}
+#program .program-title h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+#program .program-title .underline {
+  width: 50%;
+  height: 0.1rem;
+  background: #ec5242;
+}
+#program .program-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+#program .program-cards .program-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 3rem;
+  min-height: 12vh;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+#program .program-cards .program-card .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+#program .program-cards .program-card p {
+  max-width: 60%;
+}
+#program .program-cards .program-card h3 {
+  text-align: left;
+  font-size: 2rem;
+  color: #ec5242;
+}
+#program .program-call-to-action {
+  background: #ec5242;
+  color: #fff;
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  margin: 2rem 0;
+}
+
+#speakers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
@@ -232,9 +336,48 @@ header .nav-items li a {
     font-size: 4rem;
   }
   #hero-section .hero-text-header {
-    font-size: 6rem;
+    font-size: 6vw;
   }
   #hero-section .hero-text {
     padding: 1.5rem;
+  }
+  #program {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 70vh;
+  }
+  #program .program-title h2 {
+    font-size: 3rem;
+  }
+  #program .program-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  #program .program-cards .program-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0 1rem 0;
+    justify-content: flex-start;
+    min-height: 30vh;
+    text-align: center;
+    gap: 1rem;
+  }
+  #program .program-cards .program-card .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #program .program-call-to-action {
+    background: transparent;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+    margin: 4rem 0;
   }
 }/*# sourceMappingURL=style.css.map */

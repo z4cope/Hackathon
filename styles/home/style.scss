@@ -3,7 +3,7 @@
 
 #hero-section {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background: url("../../assets/hero-mobile-bg.png") no-repeat;
   background-size: cover;
   padding: 2rem;
@@ -19,16 +19,16 @@
     font-size: 2.5rem;
   }
   .hero-text-header {
-    font-size: 3.5vw;
+    font-size: 4vw;
     font-weight: 900;
-    background: url("../../assets/text-clip-img.jpeg") no-repeat center top;
+    background: url("../../assets/text-clip-img.jpeg") repeat-x center top;
     background-size: cover;
     color: transparent;
     background-clip: text;
   }
   .hero-text {
-    background: $light-gray;
-    border: 2px solid #fff;
+    background: rgb(247, 247, 248);
+    border: 4px solid rgb(255, 255, 255);
     padding: 1rem;
     color: $light-dark;
   }
@@ -41,6 +41,67 @@
     color: #5b5b5b;
     font-size: 1.5rem;
   }
+}
+
+#program {
+  @include flex-layout(column);
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 90vh;
+  background: $light-dark url("../../assets/icons/pattern.png") repeat;
+  padding: 1rem;
+  .program-title {
+    @include flex-layout(column);
+    gap: 2rem;
+    color: #fff;
+    margin: 4rem 0;
+    h2 {
+      font-weight: 500;
+      font-size: 2rem;
+    }
+    .underline {
+      width: 50%;
+      height: 0.1rem;
+      background: $accent-color;
+    }
+  }
+  .program-cards {
+    @include flex-layout(column);
+    gap: 0.8rem;
+    .program-card {
+      width: 100%;
+      @include flex-layout(row);
+      justify-content: flex-start;
+      gap: 3rem;
+      min-height: 12vh;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      .img-box {
+        @include flex-layout(row);
+        gap: 1.5rem;
+      }
+      p {
+        max-width: 60%;
+      }
+      h3 {
+        text-align: left;
+        font-size: 2rem;
+        color: $accent-color;
+      }
+    }
+  }
+  .program-call-to-action {
+    background: $accent-color;
+    color: #fff;
+    font-size: 2rem;
+    padding: 2rem 3rem;
+    margin: 2rem 0;
+  }
+}
+
+#speakers {
+  width: 100%;
+  @include flex-layout(column);
 }
 
 @media screen and (min-width: 768px) {
@@ -56,10 +117,40 @@
       font-size: 4rem;
     }
     .hero-text-header {
-      font-size: 6rem;
+      font-size: 6vw;
     }
     .hero-text {
       padding: 1.5rem;
+    }
+  }
+
+  #program {
+    @include flex-layout(column);
+    min-height: 70vh;
+    .program-title {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+    .program-cards {
+      @include flex-layout(row);
+      .program-card {
+        @include flex-layout(column);
+        padding: 2rem 0 1rem 0;
+        justify-content: flex-start;
+        min-height: 30vh;
+        text-align: center;
+        gap: 1rem;
+        .img-box {
+          @include flex-layout(column);
+        }
+      }
+    }
+    .program-call-to-action {
+      background: transparent;
+      padding: 0;
+      border-bottom: 1px solid #fff;
+      margin: 4rem 0;
     }
   }
 }
