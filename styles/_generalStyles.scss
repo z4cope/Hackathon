@@ -60,19 +60,19 @@ $light-dark: #272a31;
   color: #ec5242;
 }
 
-@mixin flex-layout($direction) {
+@mixin flex-layout($direction, $justify, $align) {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: $justify;
+  align-items: $align;
   flex-direction: $direction;
 }
 
 @media screen and (min-width: 768px) {
   .mobile-element {
-    display: none;
+    display: none !important;
   }
 
   .desktop-element {
-    display: initial;
+    display: flex;
   }
 }
