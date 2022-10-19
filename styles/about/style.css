@@ -107,10 +107,17 @@ header .nav-items li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    padding: 0 15rem;
-    background: #fff;
+    flex-direction: column;
     min-height: 10vh;
+  }
+  header nav .nav-wrapper {
+    background: #fff;
+    height: 10vh;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
   header .nav-items {
     display: flex;

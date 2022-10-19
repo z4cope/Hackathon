@@ -58,11 +58,15 @@ header {
     nav {
       width: 100%;
 
-      @include flex-layout(row, space-between, center);
+      @include flex-layout(column, space-between, center);
 
-      padding: 0 15rem;
-      background: #fff;
       min-height: 10vh;
+      .nav-wrapper {
+        background: #fff;
+        height: 10vh;
+        width: 70%;
+        @include flex-layout(row, space-between, center);
+      }
     }
 
     .nav-items {
