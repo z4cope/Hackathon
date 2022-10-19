@@ -1,8 +1,10 @@
-import speakers from './speakersData.js';
+import speakers from "./speakersData.js";
 
-const speakersWrapper = document.querySelector('.speakers-wrapper');
+window.addEventListener("DOMContentLoaded", () => {
+  const speakersWrapper = document.querySelector(".speakers-wrapper");
 
-let singleCard = speakers.map((speaker) => `
+  let singleCard = speakers.map(
+    (speaker) => `
     <div class="speaker-card">
         <img src="${speaker.image}" />
         <div class="speaker-content">
@@ -12,7 +14,9 @@ let singleCard = speakers.map((speaker) => `
             <p>${speaker.text}</p>
         </div>
     </div>
-    `);
+    `
+  );
 
-singleCard = singleCard.join('');
-speakersWrapper.innerHTML += singleCard;
+  singleCard = singleCard.join("");
+  speakersWrapper.innerHTML += singleCard;
+});

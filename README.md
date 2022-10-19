@@ -25,7 +25,7 @@ Communicated technical concepts to other technical people.
 
 ## Project Link on Github pages
 
-https://github.com/z4cope/Hackathon
+https://z4cope.github.io/Hackathon/index.html
 
 ## Project walkthrough link on Loom
 
@@ -63,7 +63,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse designs on Behance.
+- Original design idea by Cindy Shin in Behance.
+
+https://www.behance.net/adagio07
 
 ## 📝 License
 

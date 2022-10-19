@@ -3,12 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 *::before {
   margin: 0;
   padding: 0;
 }
-
 *::after {
   margin: 0;
   padding: 0;
@@ -52,12 +50,10 @@ p {
   .mobile-element {
     display: none !important;
   }
-
   .desktop-element {
     display: flex !important;
   }
 }
-
 header {
   width: 100%;
   height: 10vh;
@@ -65,16 +61,13 @@ header {
   top: 0;
   left: 0;
 }
-
 header .top-bar {
   display: none;
 }
-
 header nav .burger-icon {
   width: 7%;
   margin: 2rem 0 0 3rem;
 }
-
 header .nav-items {
   display: flex;
   justify-content: center;
@@ -90,14 +83,12 @@ header .nav-items {
   transform: translateX(-100%);
   transition: all 0.3s ease;
 }
-
 header .nav-items .close-btn {
   position: absolute;
   top: 2rem;
   right: 2rem;
   width: 5%;
 }
-
 header .nav-items li a {
   color: #fff;
   text-transform: capitalize;
@@ -111,7 +102,6 @@ header .nav-items li a {
     min-height: 15vh;
     width: 100%;
   }
-
   header nav {
     width: 100%;
     display: flex;
@@ -122,7 +112,6 @@ header .nav-items li a {
     background: #fff;
     min-height: 10vh;
   }
-
   header .nav-items {
     display: flex;
     justify-content: center;
@@ -133,25 +122,21 @@ header .nav-items li a {
     position: relative;
     width: auto;
   }
-
   header .nav-items li a {
     color: #272a31;
     font-size: 1.6rem;
     font-weight: 400;
   }
-
   header .nav-items .nav-call-to-action {
     color: #ec5242;
     border: 4px solid #ec5242;
     padding: 1rem 2rem;
     transition: all 0.3s ease;
   }
-
   header .nav-items .nav-call-to-action:hover {
     background-color: #ec5242;
     color: #fff;
   }
-
   header .top-bar {
     height: 5vh;
     width: 100%;
@@ -162,7 +147,6 @@ header .nav-items li a {
     flex-direction: row;
     background: #3e3e3e;
   }
-
   header .top-bar ul {
     display: flex;
     justify-content: center;
@@ -170,13 +154,11 @@ header .nav-items li a {
     flex-direction: row;
     gap: 3.5rem;
   }
-
   header .top-bar ul li {
     color: #fff;
     font-size: 1.2rem;
   }
 }
-
 .program-title {
   display: flex;
   justify-content: center;
@@ -186,12 +168,10 @@ header .nav-items li a {
   color: #fff;
   margin: 4rem 0;
 }
-
 .program-title h2 {
   font-weight: 500;
   font-size: 2rem;
 }
-
 .program-title .underline {
   width: 5rem;
   height: 0.1rem;
@@ -209,7 +189,6 @@ header .nav-items li a {
   align-items: center;
   flex-direction: column;
 }
-
 #hero-section .hero-wrapper {
   display: flex;
   justify-content: center;
@@ -218,12 +197,10 @@ header .nav-items li a {
   gap: 1rem;
   width: 100%;
 }
-
 #hero-section .hero-text-welcome {
   color: #ec5242;
   font-size: 2.5rem;
 }
-
 #hero-section .hero-text-header {
   font-size: 4vw;
   font-weight: 900;
@@ -232,20 +209,17 @@ header .nav-items li a {
   color: transparent;
   -webkit-background-clip: text;
 }
-
 #hero-section .hero-text {
   background: rgb(247, 247, 248);
   border: 4px solid rgb(255, 255, 255);
   padding: 1rem;
   color: #272a31;
 }
-
 #hero-section .hero-text-time {
   color: #5b5b5b;
   font-size: 3rem;
   font-weight: 900;
 }
-
 #hero-section .hero-text-place {
   color: #5b5b5b;
   font-size: 1.5rem;
@@ -261,7 +235,6 @@ header .nav-items li a {
   background: #272a31 url("../../assets/icons/pattern.png") repeat;
   padding: 1rem;
 }
-
 #program .program-cards {
   display: flex;
   justify-content: center;
@@ -269,7 +242,6 @@ header .nav-items li a {
   flex-direction: column;
   gap: 0.8rem;
 }
-
 #program .program-cards .program-card {
   width: 100%;
   display: flex;
@@ -281,7 +253,6 @@ header .nav-items li a {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
-
 #program .program-cards .program-card .img-box {
   display: flex;
   justify-content: center;
@@ -289,17 +260,14 @@ header .nav-items li a {
   flex-direction: row;
   gap: 1.5rem;
 }
-
 #program .program-cards .program-card p {
   max-width: 60%;
 }
-
 #program .program-cards .program-card h3 {
   text-align: left;
   font-size: 2rem;
   color: #ec5242;
 }
-
 #program .program-call-to-action {
   background: #ec5242;
   color: #fff;
@@ -313,21 +281,17 @@ header .nav-items li a {
   width: 100%;
   padding: 0 2rem;
 }
-
 #speakers .program-title h2 {
   color: #272a31;
 }
-
 #speakers .chevron {
   height: 40rem;
   overflow: hidden;
   transition: all 1s ease;
 }
-
 #speakers .show-more-speakers.active .chevron-arrow {
   transform: rotate(180deg);
 }
-
 #speakers .speakers-wrapper {
   display: flex;
   justify-content: center;
@@ -335,7 +299,6 @@ header .nav-items li a {
   flex-direction: column;
   gap: 5rem;
 }
-
 #speakers .speaker-card {
   display: flex;
   justify-content: center;
@@ -343,7 +306,6 @@ header .nav-items li a {
   flex-direction: row;
   gap: 3rem;
 }
-
 #speakers .speaker-card .speaker-content {
   display: flex;
   justify-content: center;
@@ -351,25 +313,21 @@ header .nav-items li a {
   flex-direction: column;
   gap: 1rem;
 }
-
 #speakers .speaker-card .speaker-content .speaker-name {
   color: #272a31;
   font-size: 2.5rem;
 }
-
 #speakers .speaker-card .speaker-content .speaker-title {
   color: #ec5242;
   font-size: 1.5rem;
   font-weight: 500;
   font-style: italic;
 }
-
 #speakers .speaker-card .speaker-content .hr-line {
   width: 2rem;
   height: 0.1rem;
   background: #d3d3d3;
 }
-
 #speakers .show-more-speakers {
   width: 100%;
   padding: 1.5rem;
@@ -382,7 +340,6 @@ header .nav-items li a {
   flex-direction: row;
   margin: 5rem 0;
 }
-
 #speakers .show-more-speakers img {
   width: 50%;
 }
@@ -391,34 +348,27 @@ header .nav-items li a {
   .program-title {
     margin-bottom: 5rem;
   }
-
   .program-title h2 {
     font-size: 3rem;
   }
-
   #hero-section {
     background: url("../../assets/hero-bg.png") no-repeat center center;
     background-size: cover;
     padding: 0 15rem;
   }
-
   #hero-section .hero-wrapper {
     width: 50%;
     margin-right: auto;
   }
-
   #hero-section .hero-text-welcome {
     font-size: 4rem;
   }
-
   #hero-section .hero-text-header {
     font-size: 6vw;
   }
-
   #hero-section .hero-text {
     padding: 1.5rem;
   }
-
   #program {
     display: flex;
     justify-content: center;
@@ -426,14 +376,12 @@ header .nav-items li a {
     flex-direction: column;
     min-height: 70vh;
   }
-
   #program .program-cards {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
   }
-
   #program .program-cards .program-card {
     display: flex;
     justify-content: flex-start;
@@ -444,36 +392,30 @@ header .nav-items li a {
     text-align: center;
     gap: 1rem;
   }
-
   #program .program-cards .program-card .img-box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-
   #program .program-call-to-action {
     background: transparent;
     padding: 0;
     border-bottom: 1px solid #fff;
     margin: 4rem 0;
   }
-
   #speakers {
     width: 80%;
   }
-
   #speakers .chevron {
     height: auto;
     overflow: visible;
   }
-
   #speakers .speakers-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
   }
-
   #clients {
     background: #272a31;
     width: 100%;
@@ -482,18 +424,15 @@ header .nav-items li a {
     margin-top: 8rem;
     justify-content: center;
   }
-
   #clients .clients-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-
   #clients .clients-wrapper .program-title {
     color: #d3d3d3;
   }
-
   #clients .clients-wrapper ul {
     display: flex;
     justify-content: center;
@@ -501,12 +440,10 @@ header .nav-items li a {
     flex-direction: row;
     gap: 5rem;
   }
-
   #clients .clients-wrapper ul li img {
     filter: grayscale(100%);
     width: 15rem;
   }
-
   footer {
     min-height: 30vh;
     width: 100%;
@@ -515,7 +452,6 @@ header .nav-items li a {
     align-items: center;
     flex-direction: row;
   }
-
   footer .footer-wrapper {
     display: flex;
     justify-content: center;
@@ -525,16 +461,13 @@ header .nav-items li a {
     margin: auto;
     gap: 5rem;
   }
-
   footer .footer-wrapper .footer-img {
     width: 25rem;
   }
-
   footer .footer-wrapper h2 {
     margin-bottom: 1rem;
   }
-
   footer .footer-wrapper p {
     max-width: 90%;
   }
-}
+}/*# sourceMappingURL=style.css.map */
