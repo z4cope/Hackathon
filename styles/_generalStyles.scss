@@ -19,6 +19,18 @@ html {
   font-family: "Lato", sans-serif;
 }
 
+#fader {
+  position: fixed;
+  background: #ec5242;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: translateY(-100%);
+  transition: all 2s ease;
+}
+
 ul {
   list-style: none;
 }

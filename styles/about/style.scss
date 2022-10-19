@@ -10,17 +10,21 @@
 #hero {
   width: 100%;
   min-height: 100vh;
-  background: rgb(242, 242, 242) url("../../assets/about_bg_01.png") no-repeat
+  background:
+    rgb(242, 242, 242) url("../../assets/about_bg_01.png") no-repeat
     center center;
   background-size: contain;
-  @include flex-layout(column, center, center);
-  gap: 1rem;
 
+  @include flex-layout(column, center, center);
+
+  gap: 1rem;
   text-align: center;
+
   .hero-text-welcome {
     font-size: 2.5rem;
     color: $accent-color;
   }
+
   .hero-text-header {
     font-size: 8vw;
     font-weight: 900;
@@ -34,6 +38,7 @@
     color: $light-dark;
     max-width: 70%;
   }
+
   .hero-text-notice {
     color: #5b5b5b;
     font-size: 1.5rem;
@@ -50,17 +55,109 @@
 
 #events {
   @include flex-layout(column, center, center);
-  gap: 2rem;
-  text-align: center;
+
   min-height: 60vh;
-  padding: 2rem;
-  border-bottom: 1px solid $light-gray;
+
+  .events-intro {
+    @include flex-layout(column, center, center);
+
+    gap: 2rem;
+    text-align: center;
+    padding: 2rem;
+  }
+
   h2 {
     font-size: 2.5rem;
     font-weight: 500;
   }
+
   img {
     width: 100%;
+  }
+
+  .events-content {
+    @include flex-layout(column, center, center);
+
+    width: 100%;
+    gap: 2rem;
+    border-top: 1px solid $light-gray;
+    padding: 4rem 2rem;
+    text-align: center;
+
+    .event-dates-wrapper {
+      @include flex-layout(column, center, center);
+
+      gap: 1.5rem;
+
+      .event-date {
+        width: 100%;
+        min-height: 40vh;
+
+        @include flex-layout(column, center, center);
+      }
+    }
+  }
+}
+
+#clients {
+  background: $light-dark;
+  width: 100%;
+  min-height: 30vh;
+  padding-bottom: 4rem;
+  margin-top: 8rem;
+  justify-content: center;
+
+  .clients-wrapper {
+    @include flex-layout(column, center, center);
+
+    .program-title {
+      color: $light-gray;
+      margin: 3rem 0;
+      font-size: 1.5rem;
+      font-weight: 200;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      flex-wrap: wrap;
+      gap: 5rem;
+
+      li {
+        img {
+          filter: grayscale(100%);
+          width: 10rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  min-height: 30vh;
+  width: 100%;
+  padding: 0 2rem;
+
+  @include flex-layout(row, center, center);
+
+  .footer-wrapper {
+    @include flex-layout(row, center, center);
+
+    width: 100%;
+    margin: auto;
+    gap: 5rem;
+
+    .footer-img {
+      width: 25rem;
+    }
+
+    .footer-title {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      max-width: 100%;
+    }
   }
 }
 
@@ -68,17 +165,24 @@
   #hero {
     position: relative;
     padding: 0 15rem;
+
     .breadcrumbs {
       width: 100%;
       padding: 0 15rem;
+
       @include flex-layout(row, flex-end, center);
+
       position: absolute;
       top: 2rem;
+
       ul {
         @include flex-layout(row, flex-end, center);
+
         gap: 0.5rem;
+
         li {
           @include flex-layout(row, flex-end, center);
+
           .bread-arrow {
             transform: rotate(-90deg);
             width: 40%;
@@ -87,6 +191,7 @@
         }
       }
     }
+
     .hero-text-header {
       font-size: 5vw;
       font-weight: 900;
@@ -97,6 +202,37 @@
   #events {
     img {
       width: 40%;
+    }
+
+    .events-intro {
+      padding: 4rem 0;
+
+      p {
+        max-width: 40%;
+      }
+    }
+
+    .events-content {
+      .event-dates-wrapper {
+        @include flex-layout(row, flex-end, center);
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  footer {
+    background: $light-dark;
+    color: #fff;
+
+    h2 {
+      font-weight: 200;
+    }
+
+    .footer-wrapper {
+      width: 60%;
     }
   }
 }

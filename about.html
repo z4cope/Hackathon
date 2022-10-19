@@ -8,6 +8,7 @@
     <title>About Hackathon</title>
   </head>
   <body>
+    <div id="fader"></div>
     <header>
       <div class="top-bar">
         <ul class="top-bar-social">
@@ -25,7 +26,7 @@
         </ul>
       </div>
       <nav>
-        <a href="#">
+        <a href="./index.html">
           <img
             class="desktop-element logo"
             src="./assets/icons/logoipsum-280.svg"
@@ -46,8 +47,8 @@
               alt="mobile menu close button"
             />
           </li>
-          <li class="mobile-element"><a href="#">Home</a></li>
-          <li><a href="#">about</a></li>
+          <li class="mobile-element"><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">about</a></li>
           <li><a href="#">program</a></li>
           <li><a href="#">join</a></li>
           <li><a href="#">sponser</a></li>
@@ -61,7 +62,7 @@
         <div class="desktop-element breadcrumbs">
           <ul>
             <li>
-              <a href="./home.html">
+              <a href="./index.html">
                 <img
                   src="./assets/icons/baseline-home.svg"
                   alt="home page link"
@@ -103,17 +104,80 @@
         </a>
       </section>
       <section id="events">
-        <h2>Lorem, ipsum dolor.</h2>
-        <div class="hr-line"></div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quia
-          dolore quos repellendus deserunt ratione recusandae sequi fuga
-          corrupti et, Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Veniam, optio?
-        </p>
-        <img src="./assets/about_logo.png" alt="event logo" />
+        <div class="events-intro">
+          <h2>Lorem, ipsum dolor.</h2>
+          <div class="hr-line"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+            quia dolore quos repellendus deserunt ratione recusandae sequi fuga
+            corrupti et, Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Veniam, optio?
+          </p>
+          <img src="./assets/about_logo.png" alt="event logo" />
+        </div>
+        <div class="events-content">
+          <h2>Lorem, ipsum dolor.</h2>
+          <div class="hr-line"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+            rem alias debitis, Lorem ipsum dolor sit amet.
+          </p>
+          <div class="event-dates-wrapper">
+            <div class="event-date">
+              <img src="./assets/about_2013.png" alt="2013 event" />
+            </div>
+            <div class="event-date">
+              <img src="./assets/about_2011.png" alt="2011 event" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mobile-element" id="clients">
+        <div class="clients-wrapper">
+          <div class="program-title">
+            <h2>Partners</h2>
+            <div class="underline"></div>
+          </div>
+          <ul>
+            <li><img src="./assets/icons/mozilla.png" alt="mozilla" /></li>
+            <li><img src="./assets/icons/google.png" alt="google" /></li>
+            <li><img src="./assets/icons/naver.png" alt="navar" /></li>
+            <li>
+              <img src="./assets/icons/microverse.webp" alt="microverse" />
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-wrapper">
+        <img
+          class="desktop-element footer-img"
+          src="./assets/logo_cc_w_147x35.png"
+          alt="site logo"
+        />
+        <img
+          class="mobile-element footer-img"
+          src="./assets/icons/cck-logo1.png"
+          alt="cck logo"
+        />
+        <div class="footer-content">
+          <h2 class="desktop-element footer-title">
+            Lorem ipsum dolor sit amet.
+          </h2>
+          <p class="mobile-element mobile-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit,
+            totam?
+          </p>
+          <p class="desktop-element desktop-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, eum? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet, Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Doloribus, possimus.
+          </p>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>
