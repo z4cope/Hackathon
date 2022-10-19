@@ -37,7 +37,7 @@ $light-gray: #d3d3d3;
 $light-dark: #272a31;
 
 .desktop-element {
-  display: none;
+  display: none !important;
 }
 
 @mixin dark-text {
@@ -73,6 +73,6 @@ $light-dark: #272a31;
   }
 
   .desktop-element {
-    display: flex;
+    display: flex !important;
   }
 }

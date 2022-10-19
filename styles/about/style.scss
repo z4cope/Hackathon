@@ -1,2 +1,102 @@
 @import "../generalStyles";
 @import "../components/header";
+
+.hr-line {
+  width: 5rem;
+  height: 0.1rem;
+  background: $accent-color;
+}
+
+#hero {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(242, 242, 242) url("../../assets/about_bg_01.png") no-repeat
+    center center;
+  background-size: contain;
+  @include flex-layout(column, center, center);
+  gap: 1rem;
+
+  text-align: center;
+  .hero-text-welcome {
+    font-size: 2.5rem;
+    color: $accent-color;
+  }
+  .hero-text-header {
+    font-size: 8vw;
+    font-weight: 900;
+    color: $accent-color;
+  }
+
+  .hero-text {
+    background: #fff;
+    border: 1px solid $light-gray;
+    padding: 1rem;
+    color: $light-dark;
+    max-width: 70%;
+  }
+  .hero-text-notice {
+    color: #5b5b5b;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .hero-mail {
+    color: #5b5b5b;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-bottom: 1px solid #5b5b5b;
+  }
+}
+
+#events {
+  @include flex-layout(column, center, center);
+  gap: 2rem;
+  text-align: center;
+  min-height: 60vh;
+  padding: 2rem;
+  border-bottom: 1px solid $light-gray;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #hero {
+    position: relative;
+    padding: 0 15rem;
+    .breadcrumbs {
+      width: 100%;
+      padding: 0 15rem;
+      @include flex-layout(row, flex-end, center);
+      position: absolute;
+      top: 2rem;
+      ul {
+        @include flex-layout(row, flex-end, center);
+        gap: 0.5rem;
+        li {
+          @include flex-layout(row, flex-end, center);
+          .bread-arrow {
+            transform: rotate(-90deg);
+            width: 40%;
+            margin: auto;
+          }
+        }
+      }
+    }
+    .hero-text-header {
+      font-size: 5vw;
+      font-weight: 900;
+      color: $accent-color;
+    }
+  }
+
+  #events {
+    img {
+      width: 40%;
+    }
+  }
+}
