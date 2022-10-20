@@ -1,3 +1,142 @@
+$accent-color: #ec5242;
+
 header {
-  width: 100vw;
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .top-bar {
+    display: none;
+  }
+
+  nav {
+    .burger-icon {
+      width: 7%;
+      margin: 2rem 0 0 3rem;
+    }
+  }
+
+  .nav-items {
+    @include flex-layout(column, center, center);
+    @include accent-color-bg;
+
+    gap: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+
+    .close-btn {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: 5%;
+    }
+
+    li {
+      a {
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 2.4rem;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    position: initial;
+    min-height: 15vh;
+    width: 100%;
+
+    nav {
+      width: 100%;
+
+      @include flex-layout(column, space-between, center);
+
+      min-height: 10vh;
+
+      .nav-wrapper {
+        background: #fff;
+        height: 10vh;
+        width: 100%;
+        padding: 0 18rem;
+
+        @include flex-layout(row, space-between, center);
+      }
+    }
+
+    .nav-items {
+      @include flex-layout(row, center, center);
+
+      transform: translateX(0) !important;
+      background: transparent;
+      position: initial;
+      width: auto;
+
+      li {
+        a {
+          @include dark-light-text;
+
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+      }
+
+      .nav-call-to-action {
+        @include accent-color-text;
+
+        border: 4px solid $accent-color;
+        padding: 1rem 2rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          @include accent-color-bg;
+
+          color: #fff;
+        }
+      }
+    }
+
+    .top-bar {
+      height: 5vh;
+      width: 100%;
+      padding: 0 15rem;
+
+      @include flex-layout(row, flex-end, center);
+
+      background: #3e3e3e;
+
+      ul {
+        @include flex-layout(row, center, center);
+
+        gap: 3.5rem;
+
+        li {
+          color: #fff;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1111px) {
+  header {
+    nav {
+      .nav-wrapper {
+        padding: 0 8rem;
+      }
+    }
+
+    .nav-items {
+      gap: 2rem;
+    }
+  }
 }
