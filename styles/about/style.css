@@ -26,7 +26,7 @@ html {
   left: 0;
   z-index: 100;
   transform: translateY(-100%);
-  transition: all 2s ease;
+  transition: all 1s ease;
 }
 
 ul {
@@ -113,7 +113,8 @@ header .nav-items li a {
   header nav .nav-wrapper {
     background: #fff;
     height: 10vh;
-    width: 70%;
+    width: 100%;
+    padding: 0 18rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,7 +127,7 @@ header .nav-items li a {
     flex-direction: row;
     transform: translateX(0) !important;
     background: transparent;
-    position: relative;
+    position: initial;
     width: auto;
   }
   header .nav-items li a {
@@ -164,6 +165,14 @@ header .nav-items li a {
   header .top-bar ul li {
     color: #fff;
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1111px) {
+  header nav .nav-wrapper {
+    padding: 0 8rem;
+  }
+  header .nav-items {
+    gap: 2rem;
   }
 }
 .hr-line {

@@ -205,12 +205,14 @@
   }
 
   #hero-section {
-    background: url("../../assets/hero-bg.png") no-repeat center center;
-    background-size: cover;
-    padding: 0 15rem;
+    @include flex-layout(column, flex-start, center);
+    background: url("../../assets/hero-bg.png") repeat;
+    background-position: 50%, 20%;
+    background-size: 155%;
+    padding: 5rem 0 0 15rem;
 
     .hero-wrapper {
-      width: 50%;
+      width: 55%;
       margin-right: auto;
     }
 
@@ -223,7 +225,8 @@
     }
 
     .hero-text {
-      padding: 1.5rem;
+      padding: 2rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -242,7 +245,11 @@
         min-height: 30vh;
         text-align: center;
         gap: 1rem;
-
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+        &:hover {
+          border: 1px solid #fff;
+        }
         .img-box {
           @include flex-layout(column, center, center);
         }
@@ -326,6 +333,18 @@
       p {
         max-width: 90%;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1111px) {
+  #hero-section {
+    padding: 5rem 0 0 5rem;
+  }
+
+  #speakers {
+    .speakers-wrapper {
+      grid-template-columns: 1fr;
     }
   }
 }

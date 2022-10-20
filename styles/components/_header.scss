@@ -64,7 +64,8 @@ header {
       .nav-wrapper {
         background: #fff;
         height: 10vh;
-        width: 70%;
+        width: 100%;
+        padding: 0 18rem;
         @include flex-layout(row, space-between, center);
       }
     }
@@ -74,7 +75,7 @@ header {
 
       transform: translateX(0) !important;
       background: transparent;
-      position: relative;
+      position: initial;
       width: auto;
 
       li {
@@ -120,6 +121,19 @@ header {
           font-size: 1.2rem;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1111px) {
+  header {
+    nav {
+      .nav-wrapper {
+        padding: 0 8rem;
+      }
+    }
+    .nav-items {
+      gap: 2rem;
     }
   }
 }

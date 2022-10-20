@@ -26,7 +26,7 @@ html {
   left: 0;
   z-index: 100;
   transform: translateY(-100%);
-  transition: all 2s ease;
+  transition: all 1s ease;
 }
 
 ul {
@@ -113,7 +113,8 @@ header .nav-items li a {
   header nav .nav-wrapper {
     background: #fff;
     height: 10vh;
-    width: 70%;
+    width: 100%;
+    padding: 0 18rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,7 +127,7 @@ header .nav-items li a {
     flex-direction: row;
     transform: translateX(0) !important;
     background: transparent;
-    position: relative;
+    position: initial;
     width: auto;
   }
   header .nav-items li a {
@@ -164,6 +165,14 @@ header .nav-items li a {
   header .top-bar ul li {
     color: #fff;
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1111px) {
+  header nav .nav-wrapper {
+    padding: 0 8rem;
+  }
+  header .nav-items {
+    gap: 2rem;
   }
 }
 .program-title {
@@ -359,12 +368,17 @@ header .nav-items li a {
     font-size: 3rem;
   }
   #hero-section {
-    background: url("../../assets/hero-bg.png") no-repeat center center;
-    background-size: cover;
-    padding: 0 15rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: url("../../assets/hero-bg.png") repeat;
+    background-position: 50%, 20%;
+    background-size: 155%;
+    padding: 5rem 0 0 15rem;
   }
   #hero-section .hero-wrapper {
-    width: 50%;
+    width: 55%;
     margin-right: auto;
   }
   #hero-section .hero-text-welcome {
@@ -374,7 +388,8 @@ header .nav-items li a {
     font-size: 6vw;
   }
   #hero-section .hero-text {
-    padding: 1.5rem;
+    padding: 2rem;
+    font-size: 1.5rem;
   }
   #program {
     display: flex;
@@ -398,6 +413,11 @@ header .nav-items li a {
     min-height: 30vh;
     text-align: center;
     gap: 1rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+  #program .program-cards .program-card:hover {
+    border: 1px solid #fff;
   }
   #program .program-cards .program-card .img-box {
     display: flex;
@@ -476,5 +496,13 @@ header .nav-items li a {
   }
   footer .footer-wrapper p {
     max-width: 90%;
+  }
+}
+@media screen and (max-width: 1111px) {
+  #hero-section {
+    padding: 5rem 0 0 5rem;
+  }
+  #speakers .speakers-wrapper {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
