@@ -1,7 +1,7 @@
-import speakers from "./speakersData.js";
+import speakers from './speakersData.js';
 
-window.addEventListener("DOMContentLoaded", () => {
-  const speakersWrapper = document.querySelector(".speakers-wrapper");
+window.addEventListener('DOMContentLoaded', () => {
+  const speakersWrapper = document.querySelector('.speakers-wrapper');
 
   let singleCard = speakers.map(
     (speaker) => `
@@ -14,9 +14,9 @@ window.addEventListener("DOMContentLoaded", () => {
             <p>${speaker.text}</p>
         </div>
     </div>
-    `
+    `,
   );
 
-  singleCard = singleCard.join("");
+  singleCard = singleCard.join('');
   speakersWrapper.innerHTML += singleCard;
 });

@@ -206,6 +206,7 @@
 
   #hero-section {
     @include flex-layout(column, flex-start, center);
+
     background: url("../../assets/hero-bg.png") repeat;
     background-position: 50%, 20%;
     background-size: 155%;
@@ -247,9 +248,11 @@
         gap: 1rem;
         border: 1px solid transparent;
         transition: all 0.3s ease;
+
         &:hover {
           border: 1px solid #fff;
         }
+
         .img-box {
           @include flex-layout(column, center, center);
         }
