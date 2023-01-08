@@ -299,7 +299,6 @@
 
       ul {
         @include flex-layout(row, center, center);
-
         gap: 5rem;
 
         li {

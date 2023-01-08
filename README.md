@@ -1,26 +1,41 @@
-# Microverse first capstone
+# Project Name
+
+## Hackathon
 
 > The design of the site is inspired by Microverse, it's basically a static design on Behance and has been built using HTML, CSS & Javascript.
-> And here is the steps that I followed in creating this website:
 
-Used semantic HTML tags.
-Applied best practices in HTML code.
-Used CSS selectors correctly.
-Used CSS box model.
-Used Flexbox to place elements on the page.
-Demonstrated ability to create UIs adaptable to different screen sizes using media queries.
-Used GitHub Pages to deploy web pages.
-Applied JavaScript best practices and language style guides in code.
-Used JavaScript to manipulate DOM elements.
-Used JavaScript events.
-Used objects to store and access data.
-Communicated technical concepts to other technical people.
+## SCREEN SHOT
+
+![screenshot](./assets/Hackathon.png.png)
+
+# Major steps taken to build the project
+
+- Used semantic HTML tags.
+- Applied best practices in HTML code.
+- Used CSS selectors correctly.
+- Used CSS box model.
+- Used Flexbox to place elements on the page.
+- Demonstrated the ability to create UIs adaptable to different screen sizes using media queries.
+- Used GitHub Pages to deploy web pages.
+- Applied JavaScript best practices and language style guides in code.
+- Used JavaScript to manipulate DOM elements.
+- Used JavaScript events.
+- Used objects to store and access data.
+- Communicated technical concepts to other technical people.
 
 ## Built With
 
+### Major languages
+
 - HTML
-- CSS
+- SASS
 - Javascript
+
+### Technologies used
+
+- Github
+- Git
+- Visual Studio Code
 - Linters
 
 ## Project Link on Github pages
@@ -42,14 +57,14 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - Open your code editor.
-- Press cmd + shift + P and type gitclone and choose the first option.
+- Press cmd + shift + P, type gitclone and choose the first option.
 - Paste the repo link inside the field and press enter.
 
 ## Author
 
 - GitHub: [@githubhandle](https://github.com/z4cope)
 - Twitter: [@twitterhandle](https://twitter.com/mokhaledev)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamed-khaled-10138a1b7/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mookhaled)
 
 ## 🤝 Contributing
 

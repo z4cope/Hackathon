@@ -10,8 +10,7 @@
 #hero {
   width: 100%;
   min-height: 100vh;
-  background:
-    rgb(242, 242, 242) url("../../assets/about_bg_01.png") no-repeat
+  background: rgb(242, 242, 242) url("../../assets/about_bg_01.png") no-repeat
     center center;
   background-size: contain;
 
@@ -121,8 +120,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       flex-wrap: wrap;
-      gap: 5rem;
-
+      gap: 3rem;
+      padding: 0 1rem;
       li {
         img {
           filter: grayscale(100%);
