@@ -6,7 +6,7 @@
 
 ## SCREEN SHOT
 
-![screenshot](./assets/Hackathon.png.png)
+![screenshot](./assets/Hackathon.png)
 
 # Major steps taken to build the project
 
