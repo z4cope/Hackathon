@@ -84,4 +84,4 @@ https://www.behance.net/adagio07
 
 ## 📝 License
 
-You can freely use this project for ethical use and educational purposes.
+This project is [MIT](./LICENCE) licensed.
